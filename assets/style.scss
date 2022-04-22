@@ -269,8 +269,12 @@ p > img {
 }
 
 .masthead {
+  display: flex;
   padding: 20px 0;
-  border-bottom: 1px solid $lightGray;
+  border-bottom: 1px solid #eee;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 0;
 
   @include mobile {
     text-align: center;
@@ -330,10 +334,13 @@ p > img {
 }
 
 nav {
-  float: right;
-  margin-top: 23px; // @TODO: Vertically middle align
-  font-family: $helveticaNeue;
+  display: flex;
+  text-align: left;
+  /* float: right; */
+  /* margin-top: 23px; */
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 18px;
+  gap: 0.2rem;
 
   @include mobile {
     float: none;
@@ -343,11 +350,13 @@ nav {
   }
 
   a {
-    margin-left: 20px;
+    margin: 0 0;
     color: $darkGray;
     text-align: right;
     font-weight: 300;
     letter-spacing: 1px;
+	  
+    padding: 0.2rem 0.5rem;
 
     @include mobile {
       margin: 0 10px;
