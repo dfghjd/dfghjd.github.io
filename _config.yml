@@ -100,3 +100,12 @@ exclude:
   - README.md
   - CNAME
 
+
+navs:
+  -
+    href: /
+    label: Inicio
+
+  -
+    href: /archivo/
+    label: Archivo
