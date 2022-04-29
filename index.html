@@ -7,7 +7,7 @@ layout: default
     <article class="post-entry">
       <h3>{{ post.title | escape }}</h3>
         {{ post.excerpt }}
-      <span class="post-date">{{ post.date | date: date_format }}</span>
+      <span class="post-date">{% include fechas.html %}</span>
       <a class="post-link" href="{{ site.baseurl }}{{ post.url }}"></a>
     </article>
   {% endfor %}
