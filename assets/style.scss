@@ -263,6 +263,7 @@ p > img {
   top: 0;
   background-color: $lightGray;
   max-height: 20vh;
+  z-index: 7;
   @include mobile {
     max-height: 10vh;
   }
