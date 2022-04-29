@@ -265,6 +265,9 @@ p > img {
   flex-wrap: wrap;
   gap: 0;
 
+  //:)
+  position: sticky;
+  top: 0;
   @include mobile {
     text-align: center;
   }
@@ -1004,3 +1007,12 @@ Modules - reusable parts of our design
 //@import "highlights";
 @import "darcula";
 @import "svg-icons";
+
+
+
+//new things
+
+.something{
+  height: 90vh;
+  background-color: burlywood;
+}
