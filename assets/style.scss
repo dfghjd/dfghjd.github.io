@@ -1028,3 +1028,21 @@ Modules - reusable parts of our design
     height: 80vh;
   }
 }
+
+
+.post-entry{
+  position: relative;
+  margin-bottom: 1em;
+  padding: 1em;
+  background: $lightGray;
+  border-radius: 1em;
+  border: 1px solid $darkerGray;
+}
+
+.post-link{
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
