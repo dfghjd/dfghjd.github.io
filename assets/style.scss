@@ -39,8 +39,6 @@ body {
 
 //:D
 navcontainer{
-  position: sticky;
-  top: 0;
   background-color: blue;
 }
 
@@ -262,6 +260,10 @@ p > img {
 
 .wrapper-masthead {
   margin-bottom: 25px;
+
+  //:D
+  position: sticky;
+  top: 0;
 }
 
 .masthead {
