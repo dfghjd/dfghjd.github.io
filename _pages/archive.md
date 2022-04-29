@@ -22,10 +22,10 @@ title: Posts Archive
       <ul class="past">
           {% endif %}
           {% if month != nmonth %}
-          <h3 style="text-align:left;">{{ post.date | date: '%D' }}</h3>
+          <h3 style="text-align:left;">{% include mes.html %}</h3>
           {% endif %}
           {% endunless %}
-          <p><b><a href="{{ site.baseurl }}{{ post.url }}">{% if post.title and post.title != "" %}{{post.title}}{% else %}{{post.excerpt |strip_html}}{%endif%}</a></b> - {% if post.date and post.date != "" %}{{ post.date | date: "%e %B %Y" }}{%endif%}</p>
+          <p><b><a href="{{ site.baseurl }}{{ post.url }}">{% if post.title and post.title != "" %}{{post.title}}{% else %}{{post.excerpt |strip_html}}{%endif%}</a></b> - {% if post.date and post.date != "" %}{{ post.date | date: "%D" }}{%endif%}</p>
           {% endfor %}
       </ul>
     <h3>Oldest Posts</h3>
