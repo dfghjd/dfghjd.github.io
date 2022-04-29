@@ -1,10 +1,10 @@
 ---
 layout: inicio
 ---
-
+<div class="contenedor">
 <div class="posts carousel">
   {% for post in paginator.posts %}
-    <article class="post-entry">
+    <article class="post-item">
       <h3>{{ post.title | escape }}</h3>
         {{ post.excerpt }}
       <span class="post-date left">{% include fechas.html %}</span>
@@ -13,13 +13,70 @@ layout: inicio
   {% endfor %}
 </div>
 
+<div class="controller">
+  <div id="line1"></div>
+  <div id="line2"></div>
+  <div id="line3"></div>
+  <div id="line4"></div>
+  <div id="active"></div>
+
+
+</div>
+</div>
+
 
 <style>
+  .contenedor{
+    background-color: peru;
+  }
   .carousel{
     width: 100;
     height: 100vh;
-    background-color: peru;
+
+    display: inline-flex;
 
   }
 
+  .post-item{
+    width: 600px;
+    height: 500px;
+  }
+
+
+  .controller{
+    width: .1rem;
+    height: 280px;
+    display: block;
+    background-color: blueviolet;
+    position: absolute;
+    top: 55%;
+    right: 4rem;
+    transform: translateY(-50%);
+  }
+
+#line1, #line2, #line3, #line4{
+  height: 70px;
+  width: .5rem;
+  cursor: pointer;
+  transform: translateX(-50%);
+  background-color: pink;
+
+}
+
+#active{
+  width: .3rem;
+  height: 70px;
+  border-radius: 7px;
+  background-color: brown;
+  position: absolute;
+  top: 0;
+  transform:translateX(-50%);
+
+
+}
 </style>
+
+<script>
+  var slider =document.getElementById('slider');
+
+</script>
