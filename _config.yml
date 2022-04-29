@@ -109,3 +109,5 @@ navs:
   -
     href: /archivo/
     label: Archivo
+
+date_format: "%b %-d, %Y"
