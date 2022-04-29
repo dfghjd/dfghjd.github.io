@@ -6,9 +6,7 @@ layout: default
   {% for post in paginator.posts %}
     <article class="post-entry">
       <h3>{{ post.title | escape }}</h3>
-      {%- if site.show_excerpts -%}
         {{ post.excerpt }}
-      {%- endif -%}
       <span class="post-date">{{ post.date | date: date_format }}</span>
       <a class="post-link" href="{{ site.baseurl }}{{ post.url }}"></a>
     </article>
