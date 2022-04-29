@@ -107,7 +107,9 @@ navs:
     label: Inicio
 
   -
+    href: /blog/
+    label: Blog
+
+  -
     href: /archivo/
     label: Archivo
-
-date_format: "%b %-d, %Y"
