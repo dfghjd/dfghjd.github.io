@@ -264,11 +264,17 @@ p > img {
   //:D
   position: sticky;
   top: 0;
+  background-color: $lightGray;
+  max-height: 20vh;
+  @include mobile {
+    max-height: 10vh;
+  }
 }
+
 
 .masthead {
   display: flex;
-  padding: 20px 0;
+  padding: 10px 0;
   border-bottom: 1px solid #eee;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -1019,6 +1025,9 @@ Modules - reusable parts of our design
 //new things
 
 .something{
-  height: 90vh;
+  height: 80vh;
   background-color: burlywood;
+  @include mobile {
+    height: 90vh;
+  }
 }
