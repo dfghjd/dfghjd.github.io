@@ -1,5 +1,7 @@
 ---
 layout: page
+permalink: /blog/
+title: The blog
 ---
 
 
