@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es-ES"></html>
+
+  {% include head.html %}
+
+  <body>
+    <div class="wrapper-container">
+
+      <div class="something">Something big here</div>
+
+      <div class="wrapper-masthead">
+        <div class="container">          
+          <header class="masthead">
+            <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.baseurl }}{{ site.avatar }}" alt="{{ site.title }}" /></a>
+
+            <div class="site-info">
+              <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
+              <p class="site-description">{{ site.description }}</p> 
+            </div>
+
+            <nav>
+              {% for nav in site.navs %}
+              <a href="{{ site.baseurl }}{{ nav.href }}" class="{% if page.menu == nav.label %} selected {% endif %} site-header-nav-item" target="{{ nav.target | default: _self }}" title="{{ nav.label }}">{{ nav.label }}</a>
+              {% endfor %}
+            </nav>
+          </header>
+        </div>
+      </div>
+
+      <div class="wrapper-main">
+        <div id="main" role="main" class="container">
+          {{ content }}
+        </div>
+      </div>
+
+      <div class="wrapper-footer">
+        <div class="container">
+          <footer class="footer">
+            {% include svg-icons.html %}
+          </footer>
+        </div>
+      </div>
+    </div>
+
+    {% include analytics.html %}
+  </body>
+</html>
