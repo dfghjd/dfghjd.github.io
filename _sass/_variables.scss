@@ -25,3 +25,51 @@ $georgia: Georgia, serif;
     @content;
   }
 }
+
+
+
+/* ==========================================================================
+   Color Variables
+   ========================================================================== */
+/* LIGHT */
+$c-primary: #846CA8;
+$c-primary-dark: darken($c-primary, 5%);
+$c-primary-light: lighten($c-primary, 15%);
+$c-secondary: #A14598;
+$c-secondary-dark: darken($c-secondary, 15%);
+$c-secondary-light: lighten($c-secondary, 15%);
+$c-grey: #7b7274;
+$c-grey-dark: darken($c-grey, 20%);
+$c-grey-light: lighten($c-grey, 20%);
+$c-bg: #d5d3b4;
+$c-text: #2d2f4e;
+$c-link: #A14598;
+
+/* DARK */
+$c-dark-primary: #ff70c3; // ff0095
+$c-dark-primary-dark: desaturate(darken($c-dark-primary, 35%), 15%);
+$c-dark-primary-light: lighten($c-dark-primary, 10%);
+$c-dark-secondary: #fa6285; // dd5474;
+$c-dark-secondary-dark: desaturate(darken($c-dark-secondary, 25%), 15%);
+$c-dark-secondary-light: lighten($c-dark-secondary, 12%);
+$c-dark-grey: #E0B44D;
+$c-dark-grey-dark: darken($c-dark-grey, 5%);
+$c-dark-grey-light: lighten($c-dark-grey, 26%);
+$c-dark-bg: #2d2f4e;
+$c-dark-text: #d5d3b4;
+$c-link: #E0B44D;
+
+:root {
+  --c-primary: #{$c-primary};
+  --c-primary-dark: #{$c-primary-dark};
+  --c-primary-light: #{$c-primary-light};
+  --c-secondary: #{$c-secondary};
+  --c-secondary-dark: #{$c-secondary-dark};
+  --c-secondary-light: #{$c-secondary-light};
+  --c-grey: #{$c-grey};
+  --c-grey-dark: #{$c-grey-dark};
+  --c-grey-light: #{$c-grey-light};
+  --c-bg: #{$c-bg};
+  --c-text: #{$c-text};
+  --c-link: #{$c-link};
+}
