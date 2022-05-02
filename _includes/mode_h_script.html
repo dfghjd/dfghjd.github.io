@@ -61,3 +61,12 @@ BeInclusive.Utils = {
     }
   },
 };
+
+let containerElement = document.getElementsByTagName("body")[0];
+let toggleDark = document.getElementById('dark-mode-toggle');
+let toggleLight = document.getElementById('light-mode-toggle');
+
+containerElement.classList.remove("no-js");
+toggleDark.addEventListener("click", e => BeInclusive.Utils.colorSchemeSet('dark'));
+toggleLight.addEventListener("click", e => BeInclusive.Utils.colorSchemeSet('light'));
+BeInclusive.Utils.colorSchemeInit();
