@@ -1,5 +1,43 @@
 <script>
-   /**
+
+// https://stevenwoodson.com/posts/2021/implementing-dark-mode/
+
+
+let BeInclusive = {};
+
+BeInclusive.Utils = {
+  /**
+   * Set the current color scheme to the provided `currentTheme`, overriding the default
+   * 
+   * @param {string} currentTheme 
+   */
+  colorSchemeSet: function(currentTheme) {
+    let containerElement = document.getElementsByTagName("body")[0];
+    if (currentTheme == "dark") {
+      containerElement.dataset.colorScheme = "dark";
+    } else {
+      containerElement.dataset.colorScheme = "light";
+    }
+
+    localStorage.setItem("theme", currentTheme);
+
+    return currentTheme;
+  },
+  /**
+   * Triggers the color scheme setting when the OS `prefers-color-scheme` value changes
+   * 
+   * @param {Event} e 
+   */
+  colorSchemeTrigger: function(e) {
+    let prefersDarkScheme = e;
+
+    if (prefersDarkScheme.matches) {
+      return this.colorSchemeSet("dark");
+    } else {
+      return this.colorSchemeSet("light");
+    }
+  },
+  /**
    * Initializes the color schene settings based on localStorage, defaults to 
    * `prefers-color-scheme` if no localStorage value is set.
    */
@@ -22,4 +60,14 @@
       }
     }
   },
-</script>
+};
+
+// (This should be <body> or <html>, changed to section here so it can run in CodePen)
+let containerElement = document.getElementsByTagName("body")[0];
+let toggleDark = document.getElementById('dark-mode-toggle');
+let toggleLight = document.getElementById('light-mode-toggle');
+
+containerElement.classList.remove("no-js");
+toggleDark.addEventListener("click", e => BeInclusive.Utils.colorSchemeSet('dark'));
+toggleLight.addEventListener("click", e => BeInclusive.Utils.colorSchemeSet('light'));
+BeInclusive.Utils.colorSchemeInit();
