@@ -1,0 +1,25 @@
+<script>
+   /**
+   * Initializes the color schene settings based on localStorage, defaults to 
+   * `prefers-color-scheme` if no localStorage value is set.
+   */
+  colorSchemeInit: function() {
+    window
+      .matchMedia("(prefers-color-scheme: dark)")
+      .addEventListener("change", e => this.colorSchemeTrigger(e));
+
+    let currentTheme = localStorage.getItem("theme");
+
+    if (["dark", "light"].indexOf(currentTheme) == -1) {
+      return this.colorSchemeTrigger(
+        window.matchMedia("(prefers-color-scheme: dark)")
+      );
+    } else {
+      if (currentTheme == "dark") {
+        return this.colorSchemeSet("dark");
+      } else {
+        return this.colorSchemeSet("light");
+      }
+    }
+  },
+</script>
