@@ -261,7 +261,7 @@ p > img {
   //:D
   position: sticky;
   top: 0;
-  background-color: var(--c-primary);
+  background-color: var(--c-bg);
   max-height: 20vh;
   z-index: 7;
   @include mobile {
@@ -1049,4 +1049,9 @@ Modules - reusable parts of our design
   bottom: 0;
 }
 
-
+button{
+  border: 1 px var(--c-text);
+  outline: 0;
+  background-color: var(--c-bg);
+  color: var(--c-bg)
+}

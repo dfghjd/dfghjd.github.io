@@ -57,7 +57,7 @@ $c-dark-grey-dark: darken($c-dark-grey, 5%);
 $c-dark-grey-light: lighten($c-dark-grey, 26%);
 $c-dark-bg: #2d2f4e;
 $c-dark-text: #d5d3b4;
-$c-link: #E0B44D;
+$c-dark-link: #E0B44D;
 
 :root {
   --c-primary: #{$c-primary};
@@ -73,3 +73,37 @@ $c-link: #E0B44D;
   --c-text: #{$c-text};
   --c-link: #{$c-link};
 }
+
+
+/* ==========================================================================
+   Dark Mode Modifications (usually in a separate file, inline because of CodePen)
+   ========================================================================== */
+   @mixin dark-mode {
+    --c-primary: #{$c-dark-primary};
+    --c-primary-dark: #{$c-dark-primary-dark};
+    --c-primary-light: #{$c-dark-primary-light};
+    --c-secondary: #{$c-dark-secondary};
+    --c-secondary-dark: #{$c-dark-secondary-dark};
+    --c-secondary-light: #{$c-dark-secondary-light};
+    --c-grey: #{$c-dark-grey};
+    --c-grey-dark: #{$c-dark-grey-dark};
+    --c-grey-light: #{$c-dark-grey-light};
+    --c-bg: #{$c-dark-bg};
+    --c-text: #{$c-dark-text};
+    --c-link: #{$c-dark-link};
+  }
+
+/* ==========================================================================
+   Applying colors based on `prefers-color-scheme` first, then user selection in `data-color-scheme`
+   ========================================================================== */
+@media (prefers-color-scheme: dark) {
+  body.no-js {
+    @include dark-mode;
+  }
+}
+
+[data-color-scheme="dark"] {
+    @include dark-mode;
+}
+
+
