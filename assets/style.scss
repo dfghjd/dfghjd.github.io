@@ -1029,6 +1029,11 @@ Modules - reusable parts of our design
 }
 
 
+.posts{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 .post-entry{
   position: relative;
   margin-bottom: 1em;
@@ -1036,6 +1041,8 @@ Modules - reusable parts of our design
   background: var(--c-secondary);
   border-radius: 1em;
   border: 1px solid var(--c-secondary-dark);
+
+  max-width: 48%;
 }
 
 .post-date{
