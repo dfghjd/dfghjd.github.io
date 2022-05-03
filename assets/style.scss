@@ -1043,6 +1043,9 @@ Modules - reusable parts of our design
   border: 1px solid var(--c-secondary-dark);
 
   max-width: 48%;
+  @include mobile {
+    max-width: 100%;
+  }
 }
 
 .post-date{
