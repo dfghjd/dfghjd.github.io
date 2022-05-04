@@ -265,7 +265,7 @@ p > img {
   max-height: 20vh;
   z-index: 7;
   @include mobile {
-    max-height: 10vh;
+    min-height: fit-content;
   }
 }
 
