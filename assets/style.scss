@@ -292,6 +292,10 @@ p > img {
   img {
     border-radius: 5px;
   }
+  @include mobile {
+    width: 2rem;
+    height: 2rem;
+  }
 }
 
 .site-info {
@@ -305,7 +309,7 @@ p > img {
   cursor: pointer;
   font-family: $helveticaNeue;
   font-weight: 300;
-  font-size: 28px;
+  font-size: 1rem;
   letter-spacing: 1px;
   text-align: left;
 }
@@ -313,7 +317,7 @@ p > img {
 .site-description {
   margin: -5px 0 0 0;
   color: $gray;
-  font-size: 16px;
+  font-size: .5rem;
 }
 
 nav {
@@ -1069,4 +1073,5 @@ button{
 
 .post-entry:nth-child(1){
   background-color: #75ce66;
+  width: 100%;
 }
