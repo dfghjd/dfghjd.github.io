@@ -626,7 +626,8 @@ Modules - reusable parts of our design
   text-align: center;
   border: 1px solid var(--c-bg)
   border-radius: 6px;
-  background-color: #ffffff;
+  background-color: var(--c-bg);
+  gap: .3rem;
 
   .actual{
     width: 2rem;
@@ -643,9 +644,6 @@ Modules - reusable parts of our design
   }
 }
 
-.pagination {
-  text-align: center;
-}
 
 .tlemail {
   width: 80%;
