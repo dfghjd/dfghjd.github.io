@@ -1046,9 +1046,9 @@ Modules - reusable parts of our design
   border-radius: 1em;
   border: 1px solid var(--c-secondary-dark);
 
-  max-width: 48%;
+  width: 48%;
   @include mobile {
-    max-width: 100%;
+    width: 100%;
   }
 }
 
