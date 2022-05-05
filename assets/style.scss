@@ -1095,12 +1095,17 @@ button{
   margin-left: auto;
   margin-right: auto;
 
+  overflow: -moz-scrollbars-none;
+  -ms-overflow-style: none;
+
   span{
     margin: 0.5rem;
     background: white;
     border-radius: 7px;
     padding: 0.3rem;
   }
+
+  ::-webkit-scrollbar { width: 0 !important }
 }
 
 
