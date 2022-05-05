@@ -624,16 +624,19 @@ Modules - reusable parts of our design
   justify-content: center;
 
   text-align: center;
-  border: 1px solid var(--c-bg);
   border-radius: 6px;
   background-color: var(--c-bg);
   gap: .3rem;
 
   .actual{
     width: 2rem;
+    border-bottom: 1px solid var(--c-primary);
   }
   .arrow{
     width: 4rem;
+  }
+  span .arrow, span .actual{
+    color: var(--c-gray) //change later
   }
 }
 
