@@ -5,6 +5,16 @@ title: Categories
 ---
 
 
+
+
+{% assign sorted_categories = site.categories | sort %}
+{% for category in sorted_categories %}
+<div>
+  <span id="{{ category[0] }}"><a href="#{{category[0] }}">{{ category | first }}</a>
+  </span>
+</div>
+
+
 <div id="archives">
 {% for category in site.categories %}
   <div class="archive-group">
