@@ -13,6 +13,7 @@ title: Categories
   <span id="{{ category[0] }}"><a href="#{{category[0] }}">{{ category | first }}</a>
   </span>
 </div>
+{% endfor %}
 
 
 <div id="archives">
