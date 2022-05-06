@@ -12,3 +12,22 @@
 {% if site.footer-links.youtube %}<a href="https://youtube.com/{{ site.footer-links.youtube }}"><i class="svg-icon youtube"></i></a>{% endif %}
 {% if site.footer-links.googleplus %}<a href="https://plus.google.com/{{ site.footer-links.googleplus }}"><i class="svg-icon googleplus"></i></a>{% endif %}
 {% if site.footer-links.playconsole %}<a href="https://play.google.com/store/apps/dev?id={{ site.footer-links.playconsole }}"><i class="svg-icon playconsole"></i></a>{% endif %}
+
+<script>
+var nav1 = document.querySelector('.ontop')
+var btn1 = document.querySelector('.sendbottom')
+
+var nav2 = document.querySelector('.onbottom')
+var btn2 = document.querySelector('.sendtop')
+    
+    btn1.addEventListener('click', () => {
+        nav1.classList.add('hidden');
+        nav2.classList.remove('hidden');;
+    });
+
+    btn2.addEventListener('click', () => {
+        nav2.classList.add('hidden');
+        nav1.classList.remove('hidden');
+
+    });
+</script>
