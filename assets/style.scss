@@ -350,12 +350,18 @@ nav {
   a {
     margin: 0 0;
     color: var(--c-link);
-    text-align: right;
+    
     font-weight: 300;
     letter-spacing: 1px;
 	  
     padding: 0.2rem;
   }
+}
+
+
+
+.sendbottom, .sendtop{
+  text-align: right;
 }
 
 //
