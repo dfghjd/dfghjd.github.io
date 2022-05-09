@@ -34,28 +34,4 @@ var btn2 = document.querySelector('.sendtop')
 // a msg
 console.log("%cHi", "color: white; background: black; padding: 5px 20px");
 
-const click = document.querySelector(".sendbottom");
-const nav = document.querySelector(".wrapper-masthead");
-
-click.addEventListener("click", function () {
-  if (nav.classList.contains("ontop")) {
-    nav.classList.remove("ontop");
-    nav.classList.add("onbottom");
-    if (localStorage)
-      localStorage.setItem("nav-place", "abajo");
-  } else {
-    nav.classList.add("ontop");
-    nav.classList.remove("onbottom");
-    if (localStorage)
-      localStorage.setItem("nav-place", "arriba");
-  }
-});
-
-window.onload = function () {
-  if (localStorage && localStorage.getItem("nav-place") && localStorage.getItem("nav-place") === "arriba")
-    nav.classList.add("ontop");
-  if (localStorage && localStorage.getItem("nav-place") && localStorage.getItem("nav-place") === "abajo")
-    nav.classList.add("onbottom");
-};
-
 </script>
