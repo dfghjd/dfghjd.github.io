@@ -4,7 +4,6 @@
   {% include head.html %}
 
   <body class="no-js">
-    {% include nav_script.html %}
     <div class="wrapper-container">
       <div class="wrapper-masthead">
         <div class="container">          
@@ -13,7 +12,8 @@
         </header>
         </div>
       </div>
-
+      {% include nav_script.html %}
+      
       <div class="wrapper-main">
         <div id="main" role="main" class="container">
           {{ content }}
