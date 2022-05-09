@@ -52,9 +52,8 @@ click.addEventListener("click", function () {
 });
 
 window.onload = function () {
-  if (localStorage && localStorage.getItem("nav-place") && localStorage.getItem("nav-place") === "arriba")
+  if (localStorage && localStorage.getItem("nav-place") && localStorage.getItem("nav-place") === null)
     nav.classList.add("ontop");
-    nav.classList.remove("onbottom");
 };
 
 </script>
