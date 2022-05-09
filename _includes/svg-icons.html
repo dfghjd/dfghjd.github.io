@@ -54,8 +54,7 @@ click.addEventListener("click", function () {
 window.onload = function () {
   if (localStorage && localStorage.getItem("nav-place") && localStorage.getItem("nav-place") === "arriba")
     nav.classList.add("ontop");
-  if (localStorage && localStorage.getItem("nav-place") && localStorage.getItem("nav-place") === "abajo")
-    nav.classList.add("onbottom");
+    nav.classList.remove("onbottom");
 };
 
 </script>
