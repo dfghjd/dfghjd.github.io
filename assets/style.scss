@@ -320,6 +320,8 @@ p > img {
 .site-info {
   flex: auto;
   text-align: left;
+
+  max-width: fit-content;
 }
 
 .site-name {
