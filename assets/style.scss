@@ -318,10 +318,12 @@ p > img {
 }
 
 .site-info {
-  flex: auto;
-  text-align: left;
-
   max-width: fit-content;
+  margin-right: auto; //to send to the left
+
+  display: flex;
+  align-items: center;
+  gap:.3rem;
 }
 
 .site-name {
@@ -330,9 +332,8 @@ p > img {
   cursor: pointer;
   font-family: $helveticaNeue;
   font-weight: 300;
-  font-size: 1rem;
+  font-size: 2rem;
   letter-spacing: 1px;
-  text-align: left;
 }
 
 .site-description {
