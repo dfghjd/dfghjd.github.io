@@ -15,6 +15,11 @@
 </span>
 
 <style>
+.switch{
+    display: flex;
+    justify-content: center;
+}
+
 #sun, #moon{
     stroke: gray;
     fill: var(--c-bg);
@@ -22,7 +27,7 @@
 
 [data-color-scheme="light"]
 #light-mode-toggle{
-    visibility: hidden;
+    display: none;
 }
 #sun{
     fill:white;
@@ -31,7 +36,7 @@
 
 [data-color-scheme="dark"]
 #dark-mode-toggle{
-    visibility: hidden;
+    display: none;
 }
 #moon{
     fill:white;
@@ -39,8 +44,5 @@
 }
 
 
-.switch{
-    display: flex;
-    background-color: var(--c-bg);
-}
+
 </style>
