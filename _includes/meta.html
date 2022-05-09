@@ -2,13 +2,27 @@
 <meta http-equiv='X-UA-Compatible' content='IE=edge'>
 <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
 
+<title>{% if page.title %}{{ page.title }} &#124; {% endif %}{{ site.name }} </title>
+
+{% if page.tags %}
+    {% assign keywords = page.tags %}
+      {% else %}
+      {% assign keywords = site.tags %}
+{% endif %}
+<meta name="keywords" content="{{ keywords | strip_html | strip_newlines}}">
+<meta name="og:keywords" content="{{ keywords | strip_html | strip_newlines}}">
+
 {% if page.excerpt %}
+<meta property="description" content="{{ page.excerpt| strip_html }}" />
 <meta property="og:description" content="{{ page.excerpt| strip_html }}" />
 {% elsif page.description %}
+<meta property="description" content="{{ page.description }}" />
 <meta property="og:description" content="{{ page.description }}" />
 {% else %}
+<meta property="description" content="{{ site.description }}" />
 <meta property="og:description" content="{{ site.description }}" />
 {% endif %}
+
 <meta name="author" content="{{ site.name }}" />
 
 {% if page.title %}
