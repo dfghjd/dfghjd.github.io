@@ -45,6 +45,7 @@ click.addEventListener("click", function () {
       localStorage.setItem("nav-place", "abajo");
   } else {
     nav.classList.add("ontop");
+    nav.classList.remove("onbottom");
     if (localStorage)
       localStorage.setItem("nav-place", "arriba");
   }
