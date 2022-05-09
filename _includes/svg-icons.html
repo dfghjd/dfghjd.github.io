@@ -52,11 +52,9 @@ click.addEventListener("click", function () {
 });
 
 window.onload = function () {
-  if (localStorage && localStorage.getItem("nav-place") && localStorage.getItem("nav-place") === arriba)
+  if (localStorage && localStorage.getItem("nav-place") && localStorage.getItem("nav-place") === "arriba")
     nav.classList.add("ontop");
-    nav.classList.remove("onbottom");
-  if (localStorage && localStorage.getItem("nav-place") && localStorage.getItem("nav-place") === abajo)
-    nav.classList.remove("ontop");
+  if (localStorage && localStorage.getItem("nav-place") && localStorage.getItem("nav-place") === "abajo")
     nav.classList.add("onbottom");
 };
 
