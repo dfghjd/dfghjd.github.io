@@ -14,7 +14,7 @@
 {% if site.footer-links.playconsole %}<a href="https://play.google.com/store/apps/dev?id={{ site.footer-links.playconsole }}"><i class="svg-icon playconsole"></i></a>{% endif %}
 
 <script>
-var nav1 = document.querySelector('.ontop')
+/* var nav1 = document.querySelector('.ontop')
 var btn1 = document.querySelector('.sendbottom')
 
 var nav2 = document.querySelector('.onbottom')
@@ -29,9 +29,30 @@ var btn2 = document.querySelector('.sendtop')
         nav2.classList.add('hidden');
         nav1.classList.remove('hidden');
 
-    });
+    }); */
 
 // a msg
 console.log("%cHi", "color: white; background: black; padding: 5px 20px");
+
+const click = document.querySelector(".sendbottom");
+const nav = document.querySelector(".wrapper-masthead");
+
+click.addEventListener("click", function () {
+  if (nav.classList.contains("ontop")) {
+    nav.classList.remove("ontop");
+    nav.classList.add("onbottom");
+    if (localStorage)
+      localStorage.setItem("nav-place", "abajo");
+  } else {
+    nav.classList.add("ontop");
+    if (localStorage)
+      localStorage.setItem("nav-place", "arriba");
+  }
+});
+
+window.onload = function () {
+  if (localStorage && localStorage.getItem("nav-place") && localStorage.getItem("nav-place") === "arriba")
+    content.classList.add("nav-place");
+};
 
 </script>
