@@ -19,15 +19,28 @@
     stroke: gray;
     fill: var(--c-bg);
 }
+
 [data-color-scheme="light"]
+#dark-mode-toggle{
+    visibility: hidden;
+}
 #sun{
     fill:white;
     stroke: skyblue;
 }
 
 [data-color-scheme="dark"]
+#light-mode-toggle{
+    visibility: hidden;
+}
 #moon{
     fill:white;
     stroke:skyblue;
+}
+
+
+.switch{
+    display: flex;
+    background-color: var(--c-bg);
 }
 </style>
