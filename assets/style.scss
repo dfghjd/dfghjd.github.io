@@ -370,11 +370,22 @@ nav {
 
 
 
-.sendbottom, .sendtop{
+.sendbottom{
   text-align: right;
 
-  background-color: var(--c-secondary);
-  margin-left: .7rem;
+  margin-left: .3rem;
+  border: 1px dashed;
+  border-radius: 4px;
+
+  font-size: 2rem;
+
+  &::before {
+    content: "⮃🡣";
+}
+}
+
+.onbottom .sendbottom::before{
+  content: "🡡"
 }
 
 //
