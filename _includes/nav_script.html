@@ -48,8 +48,8 @@ click.addEventListener("click", function () {
 // window.onload = function () {
   if (localStorage && localStorage.getItem("nav-place") && localStorage.getItem("nav-place") === "arriba")
     nav1.classList.add("ontop");
-  if (localStorage && localStorage.getItem("nav-place") && localStorage.getItem("nav-place") !== "arriba")
-    nav2.classList.add("onbottom"); //now should go to the bottom by default
+  if (localStorage && localStorage.getItem("nav-place") && localStorage.getItem("nav-place") === "abajo")
+    nav2.classList.add("onbottom"); //now should go to the bottom by default//forget it
 //};
 
 </script>
