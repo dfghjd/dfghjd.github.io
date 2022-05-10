@@ -1,4 +1,4 @@
-<!-- <script>
+<script>
 const click = document.querySelector(".sendbottom");
 const nav = document.querySelector(".wrapper-masthead");
 
@@ -19,37 +19,7 @@ click.addEventListener("click", function () {
 // window.onload = function () {
   if (localStorage && localStorage.getItem("nav-place") && localStorage.getItem("nav-place") === "arriba")
     nav.classList.add("ontop");
-  if (localStorage && localStorage.getItem("nav-place") && localStorage.getItem("nav-place") === "abajo")
-    nav.classList.add("onbottom");
+  if (localStorage && localStorage.getItem("nav-place") && localStorage.getItem("nav-place") !== "arriba")
+    nav.classList.add("onbottom"); //now you know changes keep on the gh-web-editor
 //};
-</script> -->
-
-<script>
-
-const click = document.querySelector(".sendbottom");
-const nav1 = document.querySelector(".wrapper-masthead");
-const nav2 = document.querySelector(".wrapper-masthead2");
-
-
-click.addEventListener("click", function () {
-  if (nav1.classList.contains("ontop")) {
-    nav1.classList.add("hidden");
-    nav2.classList.add("onbottom");
-    if (localStorage)
-      localStorage.setItem("nav-place", "abajo");
-  } else {
-    nav1.classList.add("ontop");
-    nav2.classList.add("hidden");
-    if (localStorage)
-      localStorage.setItem("nav-place", "arriba");
-  }
-});
-
-// window.onload = function () {
-  if (localStorage && localStorage.getItem("nav-place") && localStorage.getItem("nav-place") === "arriba")
-    nav1.classList.add("ontop");
-  if (localStorage && localStorage.getItem("nav-place") && localStorage.getItem("nav-place") === "abajo")
-    nav2.classList.add("onbottom"); //now should go to the bottom by default//forget it
-//};
-
 </script>
