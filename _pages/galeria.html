@@ -1,0 +1,3 @@
+{% for image in site.static_files %}
+        <img src="{{ site.baseurl }}{{ image.path }}" loading="lazy" alt="{{file.basename}}" />
+{% endfor %}
