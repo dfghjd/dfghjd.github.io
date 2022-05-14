@@ -1,3 +1,9 @@
 ---
 layout: default
 ---
+
+{% for image in site.static_files %}
+    {% if image.path contains 'images/' %}
+        1
+    {% endif %}
+{% endfor %}
