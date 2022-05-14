@@ -2,14 +2,18 @@
 layout: default
 ---
 
-<div class="galeria">
 {% for image in site.static_files %}
-    {% if image.path contains 'images/' %}
+    {% if image.path contains 'images/404' %}
         site.url: {{site.url}}<br>
         image.path: {{image.path}}<br>
         site.baseurl: {{site.baseurl}}<br>
         file.basename: {{file.basename}}<br>
-        image.basename: {{image.basename}}<br>
+        image.basename: {{image.basename}}<br>{% endif %}
+        {% endfor %}
+    
+<div class="galeria">
+{% for image in site.static_files %}
+    {% if image.path contains 'images/' %}
         <figure>
             <img src="{{site.url}}{{image.path}}" loading="lazy">
             <a class="imagelink" href="{{site.url}}{{image.path}}"></a>
@@ -41,6 +45,6 @@ layout: default
         position: absolute;
         inset:0;
         cursor:pointer;
-        
+
     }
 </style>
