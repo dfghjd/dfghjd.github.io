@@ -4,6 +4,6 @@ layout: default
 
 {% for image in site.static_files %}
     {% if image.path contains 'images/' %}
-        1
+        {{site.url}}<br>{{site.baseurl}}<br>{{file.basename}}
     {% endif %}
 {% endfor %}
