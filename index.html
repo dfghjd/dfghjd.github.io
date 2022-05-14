@@ -5,8 +5,8 @@ layout: default
 {% for image in site.static_files %}
     {% if image.path contains 'images/' %}
         {{site.url}}<br>{{image.path}}
-        {{site.baseurl}}<br>{{file.basename}}
-        <img src="{{file.path}}" loading="lazy">
+        {{site.baseurl}}<br>{{file.basename}}<br> y {{image.basename}}
+        <img src="{{site.url}}{{image.path}}" loading="lazy">
         <a class="imagelink" href="#"></a>
         <figcaption>{{file.basename}}</figcaption>
     </figure>
