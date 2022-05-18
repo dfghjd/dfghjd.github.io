@@ -375,7 +375,10 @@ nav {
   }
 }
 
-
+.icon{
+  width: 2rem;
+  height: 2rem;
+}
 
 .sendbottom{
   text-align: right;
@@ -387,7 +390,7 @@ nav {
   font-size: 2rem;
 
   &::before {
-    content: "⮃🡣";
+    content: url(/assets/icons.svg#corner-right-down);
 }
 }
 
