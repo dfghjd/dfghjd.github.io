@@ -381,22 +381,10 @@ nav {
 }
 
 .sendbottom{
-  text-align: right;
-
-  margin-left: .3rem;
-  border: 1px dashed;
-  border-radius: 4px;
-
-  font-size: 2rem;
-
-  &::before {
-    content: url(/assets/icons.svg#corner-right-down);
-}
+  stroke: var(--c-link);
 }
 
-.onbottom .sendbottom::before{
-  content: "🡡"
-}
+
 
 //
 // .main
