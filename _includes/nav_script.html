@@ -1,11 +1,13 @@
 <script>
 const click = document.querySelector(".sendbottom");
 const nav = document.querySelector(".wrapper-masthead");
+const arrow = click.querySelector(".icon");
 
 click.addEventListener("click", function () {
   if (nav.classList.contains("ontop")) {
     nav.classList.remove("ontop");
     nav.classList.add("onbottom");
+    console.log(arrow.innerHTML);
     if (localStorage)
       localStorage.setItem("nav-place", "abajo");
   } else {
