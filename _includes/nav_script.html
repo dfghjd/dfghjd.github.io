@@ -7,7 +7,7 @@ click.addEventListener("click", function () {
   if (nav.classList.contains("ontop")) {
     nav.classList.remove("ontop");
     nav.classList.add("onbottom");
-    console.log(arrow.innerHTML);
+    arrow.innerHTML.replace("down","up");
     if (localStorage)
       localStorage.setItem("nav-place", "abajo");
   } else {
@@ -22,6 +22,7 @@ click.addEventListener("click", function () {
   if (localStorage && localStorage.getItem("nav-place") && localStorage.getItem("nav-place") === "arriba")
     nav.classList.add("ontop");
   if (localStorage && localStorage.getItem("nav-place") && localStorage.getItem("nav-place") !== "arriba")
-    nav.classList.add("onbottom"); //now you know changes keep on the gh-web-editor
+    nav.classList.add("onbottom");
+    arrow.innerHTML.replace("down","up"); //now you know changes keep on the gh-web-editor
 //};
 </script>
