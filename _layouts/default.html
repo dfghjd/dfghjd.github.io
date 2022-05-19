@@ -3,20 +3,17 @@
   {% include head.html %}
   <body class="no-js">
     <div class="wrapper-container">
-
       <div class="wrapper-masthead">
         <div class="contain">          
           {% include header.html %}
+          {% include nav_script.html %}
         </div>
       </div>
-      {% include nav_script.html %}
-      
       <div class="wrapper-main">
         <div id="main" role="main" class="container">
           {{ content }}
         </div>
       </div>
-
       <div class="wrapper-footer">
         <div class="container">
           <footer class="footer">
@@ -25,7 +22,6 @@
         </div>
       </div>  
     </div>
-
     {% include analytics.html %}
     {% include mode_script.html %}
   </body>
