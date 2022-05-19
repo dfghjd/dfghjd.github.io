@@ -41,9 +41,9 @@ $c-secondary-light: lighten($c-secondary, 15%);
 $c-grey: #7b7274;
 $c-grey-dark: darken($c-grey, 20%);
 $c-grey-light: lighten($c-grey, 20%);
-$c-bg: #d5d3b4;
-$c-text: #2d2f4e;
-$c-link: #A14598;
+$c-bg: #ffe4cd;
+$c-text: #0a4b8a;
+$c-link: #821cad;
 
 /* DARK */
 $c-dark-primary: #ff70c3; // ff0095
@@ -55,9 +55,9 @@ $c-dark-secondary-light: lighten($c-dark-secondary, 12%);
 $c-dark-grey: #E0B44D;
 $c-dark-grey-dark: darken($c-dark-grey, 5%);
 $c-dark-grey-light: lighten($c-dark-grey, 26%);
-$c-dark-bg: #2d2f4e;
-$c-dark-text: #d5d3b4;
-$c-dark-link: #E0B44D;
+$c-dark-bg: #0a4b8a;
+$c-dark-text: #ffe4cd;
+$c-dark-link: #821cad;
 
 :root {
   --c-primary: #{$c-primary};
