@@ -32,46 +32,40 @@ $georgia: Georgia, serif;
    Color Variables
    ========================================================================== */
 /* LIGHT */
-$c-primary: #846CA8;
-$c-primary-dark: darken($c-primary, 5%);
-$c-primary-light: lighten($c-primary, 15%);
+$c-primary: #ffe4cd;
+$c-primary-stronger: darken($c-primary, 5%);
+$c-primary-lighter: lighten($c-primary, 15%);
 $c-secondary: #A14598;
-$c-secondary-dark: darken($c-secondary, 15%);
-$c-secondary-light: lighten($c-secondary, 15%);
+$c-secondary-stronger: darken($c-secondary, 15%);
+$c-secondary-lighter: lighten($c-secondary, 15%);
 $c-grey: #7b7274;
-$c-grey-dark: darken($c-grey, 20%);
-$c-grey-light: lighten($c-grey, 20%);
-$c-bg: #ffe4cd;
+$c-grey-stronger: darken($c-grey, 20%);
+$c-grey-lighter: lighten($c-grey, 20%);
 $c-text: #0a4b8a;
-$c-link: #821cad;
 
 /* DARK */
-$c-dark-primary: #ff70c3; // ff0095
-$c-dark-primary-dark: desaturate(darken($c-dark-primary, 35%), 15%);
-$c-dark-primary-light: lighten($c-dark-primary, 10%);
-$c-dark-secondary: #fa6285; // dd5474;
-$c-dark-secondary-dark: desaturate(darken($c-dark-secondary, 25%), 15%);
-$c-dark-secondary-light: lighten($c-dark-secondary, 12%);
+$c-dark-primary: #0a4b8a;
+$c-dark-primary-stronger: lighten($c-dark-primary, 10%);
+$c-dark-primary-lighter: desaturate(darken($c-dark-primary, 35%), 15%);
+$c-dark-secondary: #fa6285;
+$c-dark-secondary-stronger: lighten($c-dark-secondary, 12%);
+$c-dark-secondary-lighter: desaturate(darken($c-dark-secondary, 25%), 15%);
 $c-dark-grey: #E0B44D;
-$c-dark-grey-dark: darken($c-dark-grey, 5%);
-$c-dark-grey-light: lighten($c-dark-grey, 26%);
-$c-dark-bg: #0a4b8a;
+$c-dark-grey-stronger: lighten($c-dark-grey, 26%);
+$c-dark-grey-lighter: darken($c-dark-grey, 5%);
 $c-dark-text: #ffe4cd;
-$c-dark-link: #821cad;
 
 :root {
   --c-primary: #{$c-primary};
-  --c-primary-dark: #{$c-primary-dark};
-  --c-primary-light: #{$c-primary-light};
+  --c-primary-stronger: #{$c-primary-stronger};
+  --c-primary-lighter: #{$c-primary-lighter};
   --c-secondary: #{$c-secondary};
-  --c-secondary-dark: #{$c-secondary-dark};
-  --c-secondary-light: #{$c-secondary-light};
+  --c-secondary-stronger: #{$c-secondary-stronger};
+  --c-secondary-lighter: #{$c-secondary-lighter};
   --c-grey: #{$c-grey};
-  --c-grey-dark: #{$c-grey-dark};
-  --c-grey-light: #{$c-grey-light};
-  --c-bg: #{$c-bg};
+  --c-grey-stronger: #{$c-grey-stronger};
+  --c-grey-lighter: #{$c-grey-lighter};
   --c-text: #{$c-text};
-  --c-link: #{$c-link};
 }
 
 
@@ -80,17 +74,15 @@ $c-dark-link: #821cad;
    ========================================================================== */
    @mixin dark-mode {
     --c-primary: #{$c-dark-primary};
-    --c-primary-dark: #{$c-dark-primary-dark};
-    --c-primary-light: #{$c-dark-primary-light};
+    --c-primary-stronger: #{$c-dark-primary-stronger};
+    --c-primary-lighter: #{$c-dark-primary-lighter};
     --c-secondary: #{$c-dark-secondary};
-    --c-secondary-dark: #{$c-dark-secondary-dark};
-    --c-secondary-light: #{$c-dark-secondary-light};
+    --c-secondary-stronger: #{$c-dark-secondary-stronger};
+    --c-secondary-lighter: #{$c-dark-secondary-lighter};
     --c-grey: #{$c-dark-grey};
-    --c-grey-dark: #{$c-dark-grey-dark};
-    --c-grey-light: #{$c-dark-grey-light};
-    --c-bg: #{$c-dark-bg};
+    --c-grey-stronger: #{$c-dark-grey-stronger};
+    --c-grey-lighter: #{$c-dark-grey-lighter};
     --c-text: #{$c-dark-text};
-    --c-link: #{$c-dark-link};
   }
 
 /* ==========================================================================

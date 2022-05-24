@@ -24,7 +24,7 @@ html {
 }
 
 body {
-  background: var(--c-bg);
+  background: var(--c-primary);
   font-family: -system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   color: var(--c-text);
   line-height: 1.7;
@@ -189,11 +189,11 @@ span[data-pullquote]:before {
 }
 
 a {
-  color: var(--c-link);
+  color: var(--c-secondary);
   text-decoration: none;
 	cursor: pointer;
   &:hover, &:active {
-    color: var(--c-link);
+    color: var(--c-secondary-stronger);
   }
 }
 
@@ -268,7 +268,7 @@ p > img {
 .wrapper-masthead {
 
   //:D
-  background-color: var(--c-bg);
+  background-color: var(--c-primary-stronger);
   max-height: 20vh;
   z-index: 7;
   @include mobile {
@@ -339,7 +339,7 @@ p > img {
 
 .site-name {
   margin: 0;
-  color: var(--c-primary);
+  color: var(--c-text);
   cursor: pointer;
   font-family: $helveticaNeue;
   font-weight: 300;
@@ -366,7 +366,7 @@ nav {
 
   a {
     margin: 0 0;
-    color: var(--c-link);
+    color: var(--c-secondary-stronger);
     
     font-weight: 300;
     letter-spacing: 1px;
@@ -381,7 +381,7 @@ nav {
 }
 
 .sendbottom svg{
-  stroke: var(--c-link);
+  stroke: var(--c-secondary);
 }
 
 
@@ -662,7 +662,7 @@ Modules - reusable parts of our design
 
   text-align: center;
   border-radius: 6px;
-  background-color: var(--c-bg);
+  background-color: var(--c-secondary-lighter);
   gap: .3rem;
 
   .actual{
@@ -1112,10 +1112,10 @@ Modules - reusable parts of our design
 }
 
 button{
-  border: 1 px var(--c-text);
+  border: 1 px var(--c-secondary);
   outline: 0;
   background-color: var(--c-bg);
-  color: var(--c-text);
+  color: var(--c-secondary-stronger);
   cursor: pointer;
 }
 
