@@ -28,9 +28,9 @@ title: The blog
       {% if page == paginator.page %}
         <span class="actual">{{ page }}</span>
       {% elsif page == 1 %}
-        <a class="actual" href="{{ '/blog/' | prepend: site.baseurl}}">{{ page }}</a>
+        <a href="{{ '/blog/' | prepend: site.baseurl}}">{{ page }}</a>
       {% else %}
-        <a class="actual" href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+        <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
       {% endif %}
     {% endfor %}
 
