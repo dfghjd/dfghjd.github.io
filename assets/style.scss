@@ -658,6 +658,7 @@ Modules - reusable parts of our design
 
 .pagination{
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 
   text-align: center;
@@ -665,24 +666,23 @@ Modules - reusable parts of our design
   background-color: var(--c-secondary-lighter);
   gap: .3rem;
 
+  height: fit-content;
+
+  span, a{
+    min-width: 3rem;
+  }
+
   .actual{
-    width: 2rem;
-    border-bottom: 1px solid var(--c-primary);
+    border-bottom: 1px solid var(--c-secondary);
   }
   .arrow{
     width: 4rem;
   }
-  span .arrow, span .actual{
-    color: var(--c-gray) //change later
+  span .arrow, .actual{
+    color: var(--c-gray); //change later
   }
 }
 
-.pagination a {    
-  &:hover {
-      background-color: #f1f1f1;
-      color: #333;
-  }
-}
 
 
 .tlemail {
