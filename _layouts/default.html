@@ -3,16 +3,15 @@
   {% include head.html %}
   <body class="no-js">
     <div class="wrapper-container">
-      <div class="wrapper-masthead">
-        <div class="contain">          
-          {% include header.html %}
-          {% include nav_script.html %}
-        </div>
+      <a href="#main" class="skip-link">Ir al contenido principal</a>
+      <div class="wrapper-masthead" data-scroll>
+        {% include header.html %}
+        {% include nav_script.html %}
       </div>
       <div class="wrapper-main">
-        <div id="main" role="main" class="container">
+        <main id="main" role="main" class="container">
           {{ content }}
-        </div>
+        </main>
       </div>
       <div class="wrapper-footer">
         <div class="container">
