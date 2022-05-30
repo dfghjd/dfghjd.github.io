@@ -238,7 +238,7 @@ p > img {
 
 .date {
   font-style: italic;
-  color: $gray;
+  color: var(--c-text);
 }
 
 // could also specify the text color of the selection, not for now
@@ -403,7 +403,7 @@ nav {
 
 .posts > .post {
   padding-bottom: 2em;
-  border-bottom: 1px solid $lightGray;
+  border-bottom: 1px solid Gray;
 }
 
 .posts > .post:last-child {
@@ -416,7 +416,7 @@ nav {
     margin: 1.8em .8em;
     /*border-left: 2px solid $gray;*/
     padding: 0.1em 1em;
-    color: $gray;
+    color: gray;
     font-size: 22px;
     font-style: italic;
     background-color: #ede1ff;
@@ -426,7 +426,7 @@ nav {
     margin: 1.8em .8em;
     /*border-left: 2px solid $gray;*/
     padding: 0.1em 1em;
-    color: $gray;
+    color: gray;
     font-size: 22px;
     font-style: italic;
     background-color: #ddffb5;;
@@ -456,7 +456,6 @@ nav {
   bottom: 0;
   width: 100%;
   height: 89px;
-  background-color: $lightGray;
 }
 
 footer {
