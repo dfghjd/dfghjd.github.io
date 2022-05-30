@@ -14,7 +14,8 @@
 
 html {
   font-size: 16px;
-  height: 100%;
+
+  scroll-behavior:smooth;
   @include mobile {
     font-size: 14px;
   }
@@ -33,13 +34,6 @@ body {
 .container {
   margin: 0 auto;
   max-width: $best-width;
-  padding: 0 10px;
-  width: 100%;  
-}
-
-.contain {
-  margin: 0 auto;
-  max-width: 1444px;
   padding: 0 10px;
   width: 100%;  
 }
@@ -272,27 +266,38 @@ p > img {
   }
 }
 
-// div.wrapper-masthead contains: 
-// header.masthead  : div.siteinfo      nav    btn
+
+/* 
+div.wrapper-masthead 
+  header.masthead
+    div.siteinfo
+    nav    
+    btn
+*/
+
+//also https://colorable.jxnblk.com/322c3f/f7f5fb
+//and https://mycolor.space/?hex=%23F7F5FB&sub=1 
 
 header * {
   font-size: 3rem;
 }
 
 .wrapper-masthead {
-  //:D
   background-color: var(--c-primary-stronger);
-  max-height: 20vh;
+  height: fit-content;
   z-index: 7;
+
+  position: fixed;
+  top:0;
+  left:0;
+  right: 0;
+
   transition: transform .4s cubic-bezier(.25,.37,.17,.96);
-  @include mobile {
-    min-height: fit-content;
-  }
 }
 
-.no-js .wrapper-masthead{
+/* .no-js .wrapper-masthead{
   display: none; //when its loading the js. no more flashes
-}
+} */
 
 .wrapper-masthead[data-scroll="out"] {
   transform: translatey(-100%); // when is not in viewport we hide it
@@ -301,11 +306,6 @@ header * {
 [data-scroll-dir-y="-1"] .wrapper-masthead {
   transform: translatey(0); // when moving up we show it
 }
-
-
-
-
-
 
 
 .ontop{
@@ -387,17 +387,8 @@ nav {
   gap: 0.3rem;
 
   @include mobile {
-    gap: 0;
-  }
-
-  a {
-    margin: 0 0;
-    color: var(--c-secondary-stronger);
-    
-    font-weight: 300;
-    letter-spacing: 1px;
-	  
-    padding: 0 0.7rem;
+    display: none!important;
+    transition: 1s;
   }
 }
 

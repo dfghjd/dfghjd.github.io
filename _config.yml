@@ -102,13 +102,9 @@ exclude:
 #:D
 navs:
   -
-    href: /
-    label: Inicio
-
-  -
     href: /blog/
     label: Blog
 
   -
-    href: /archivo/
-    label: Archivo
+    href: 
+    label: 
