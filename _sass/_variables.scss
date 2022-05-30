@@ -17,19 +17,19 @@ $best-width: 900px;
    Color Variables
    ========================================================================== */
 /* LIGHT */
-$c-primary: #ffe4cd;
+$c-primary: #f7f5fb;
 $c-primary-stronger: darken($c-primary, 5%);
 $c-primary-lighter: lighten($c-primary, 15%);
-$c-secondary: #A14598;
+$c-secondary: #9980EA;
 $c-secondary-stronger: darken($c-secondary, 15%);
 $c-secondary-lighter: lighten($c-secondary, 15%);
 $c-grey: #7b7274;
 $c-grey-stronger: darken($c-grey, 20%);
 $c-grey-lighter: lighten($c-grey, 20%);
-$c-text: #0a4b8a;
+$c-text: #322c3f;
 
 /* DARK */
-$c-dark-primary: #0a4b8a;
+$c-dark-primary: #322c3f;
 $c-dark-primary-stronger: lighten($c-dark-primary, 10%);
 $c-dark-primary-lighter: desaturate(darken($c-dark-primary, 35%), 15%);
 $c-dark-secondary: #fa6285;
@@ -38,7 +38,7 @@ $c-dark-secondary-lighter: desaturate(darken($c-dark-secondary, 25%), 15%);
 $c-dark-grey: #E0B44D;
 $c-dark-grey-stronger: lighten($c-dark-grey, 26%);
 $c-dark-grey-lighter: darken($c-dark-grey, 5%);
-$c-dark-text: #ffe4cd;
+$c-dark-text: #f7f5fb;
 
 :root {
   --c-primary: #{$c-primary};
