@@ -254,8 +254,8 @@ p > img {
 /* LAYOUT / SECTIONS */
 /*********************/
 
-// #skip-link isnt contained :)
-#skip-link{
+// .skip-link isnt contained :)
+.skip-link{
   position: fixed;
   top: -4rem;
   left: 0;
@@ -267,6 +267,9 @@ p > img {
   color: white;
   text-align: center;
   z-index:7;
+  &:focus{
+    top:0;
+  }
 }
 
 // div.wrapper-masthead contains: 
