@@ -32,6 +32,11 @@ title: Galería de imágenes
         max-width: 100%;
         object-fit: cover;
         vertical-align: bottom;
+
+        border-radius: 1rem;
+    }
+    figure img:focus, figure img:hover{
+        border: 3px solid var(--c-secondary-stronger);
     }
     .imagelink{
         position: absolute;
@@ -40,3 +45,13 @@ title: Galería de imágenes
 
     }
 </style>
+
+{% for file in site.static_files %}
+    {% if file.path contains 'images/404' %}
+        site.url: {{site.url}}<br>
+        image.path: {{image.path}}<br>
+        file.path: {{file.path}}<br>
+        site.baseurl: {{site.baseurl}}<br>
+        file.basename: {{file.basename}}<br>
+        image.basename: {{image.basename}}<br>{% endif %}
+        {% endfor %}

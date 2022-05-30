@@ -1,14 +1,4 @@
 ---
 layout: default
 ---
-
-{% for file in site.static_files %}
-    {% if file.path contains 'images/404' %}
-        site.url: {{site.url}}<br>
-        image.path: {{image.path}}<br>
-        file.path: {{file.path}}<br>
-        site.baseurl: {{site.baseurl}}<br>
-        file.basename: {{file.basename}}<br>
-        image.basename: {{image.basename}}<br>{% endif %}
-        {% endfor %}
     
