@@ -352,7 +352,6 @@ p > img {
   margin: 0;
   color: var(--c-text);
   cursor: pointer;
-  font-family: $helveticaNeue;
   font-weight: 300;
   font-size: 2rem;
   letter-spacing: 1px;
@@ -367,7 +366,6 @@ p > img {
 nav {
   display: flex;
   text-align: left;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.5rem;
   gap: 0.3rem;
 
@@ -475,20 +473,16 @@ body:after {
 
 
 .post h1{
-  font-family: -system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   text-align: center;
   font-weight: bold;
   font-kerning: auto;
-  font-feature-settings: "kern","liga","dlig","hlig","cswh";
   line-height: 1.2;
 }
 
 .page h1{
-  font-family: -system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   text-align: center;
   font-weight: bold;
   font-kerning: auto;
-  font-feature-settings: "kern","liga","dlig","hlig","cswh";
   line-height: 1.2;
 }
 
@@ -504,7 +498,6 @@ body:after {
 .cd-container a {
   color: #30434e;
   text-decoration: none;
-  font-family: "Open Sans", sans-serif;
 }
 
 .cd-container img {
@@ -512,7 +505,6 @@ body:after {
 }
 
 .cd-container h1, .cd-container h2 {
-  font-family: "Open Sans", sans-serif;
   font-weight: bold;
 }
 
