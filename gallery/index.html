@@ -1,0 +1,42 @@
+---
+layout: page
+title: Galería de imágenes
+---
+
+<div id="main" class="galeria">
+{% for image in site.static_files %}
+    {% if image.path contains 'gallery/' %}
+        <figure>
+            <img src="{{site.url}}{{image.path}}" loading="lazy">
+            <a class="imagelink" href="{{site.url}}{{image.path}}"></a>
+            <figcaption>{{file.basename}}</figcaption>
+        </figure>
+    {% endif %}
+{% endfor %}
+</div>
+
+<style>
+    .galeria{
+        display: flex;
+        flex-wrap: wrap;
+        gap:30px;
+    }
+    figure{
+        position: relative;
+        height: auto;
+        flex-grow: 1;
+        margin: 0;
+    }
+    figure img{
+        min-width:100%;
+        max-width: 100%;
+        object-fit: cover;
+        vertical-align: bottom;
+    }
+    .imagelink{
+        position: absolute;
+        inset:0;
+        cursor:pointer;
+
+    }
+</style>
