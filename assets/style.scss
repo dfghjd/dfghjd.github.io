@@ -411,7 +411,7 @@ nav {
 .post {
   blockquote {
     margin: 1.8em .8em;
-    /*border-left: 2px solid $gray;*/
+    /*border-left: 2px solid;*/
     padding: 0.1em 1em;
     color: gray;
     font-size: 22px;
@@ -421,7 +421,7 @@ nav {
 
   .you-may-like{
     margin: 1.8em .8em;
-    /*border-left: 2px solid $gray;*/
+    /*border-left: 2px solid ;*/
     padding: 0.1em 1em;
     color: gray;
     font-size: 22px;
@@ -680,7 +680,7 @@ Modules - reusable parts of our design
     width: 4rem;
   }
   span .arrow, .actual{
-    color: var(--c-gray); //change later
+    color: gray; //change later
   }
 }
 
